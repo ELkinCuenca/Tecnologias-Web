@@ -1,0 +1,15 @@
+<h1>Buscando: <small>{{termino}}</small> </h1>
+<div class="row row-cols-md-3">
+    <div class="col" *ngFor="let heroe of heroes; let i = index">
+        <div class="card mb-3">
+            <img src="{{heroe.img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{heroe.nombre}}</h5>
+                <p class="card-text">{{heroe.bio}}</p>
+                <button type="button" class="btn btn-primary">...</button>
+                <p class="card-text"><small class="text-body-secondary">{{heroe.aparicion}}</small></p>
+                <p class="card-text">{{heroe.casa}}</p>
+            </div>
+        </div>
+    </div>
+</div>
